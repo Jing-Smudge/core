@@ -7,6 +7,9 @@
   "containerEnv": { "DEVCONTAINER": "1" },
   "appPort": ["8123:8123"],
   "runArgs": ["-e", "GIT_EDITOR=code --wait"],
+  "mounts": [
+    "type=bind,source=/dev/tty.usbserial-110,target=/dev/tty.usbserial-110"
+  ],
   "customizations": {
     "vscode": {
       "extensions": [
